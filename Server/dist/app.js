@@ -22,9 +22,9 @@ app.use(express_1.default.json()); // Parse incoming JSON data
 app.use('/api/auth', authRoutes_1.default); // Authentication routes
 app.use('/api/users', userRoutes_1.default); // User management routes
 app.use('/api/tasks', taskRoutes_1.default); // Task management routes
-const PORT = process.env.PORT || 5000;
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// const PORT = process.env.PORT || 5000;
+// // Start the server
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
 exports.default = app;

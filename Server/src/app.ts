@@ -23,11 +23,11 @@ app.use('/api/auth', authRoutes);    // Authentication routes
 app.use('/api/users', userRoutes);   // User management routes
 app.use('/api/tasks', taskRoutes);   // Task management routes
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// // Start the server
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
 
 export default app;

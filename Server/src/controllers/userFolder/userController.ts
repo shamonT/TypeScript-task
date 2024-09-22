@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { deleteUser, getAllUsers } from '../services/user/userService';
+import { deleteUser, getAllUsers } from '../../services/user/userService';
 
 interface AuthenticatedRequest extends Request {
     user?: { id: string; role: string };
